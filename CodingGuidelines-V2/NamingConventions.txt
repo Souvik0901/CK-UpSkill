@@ -1,0 +1,50 @@
+Apex Classes
+
+class names should be upperCamel case.       (ApplicationCreation)
+optional Suffix should be  API, Controller, Test, Util, Heklper, wrapper, Extension  Constants (PortalUtil, TestHelper)
+BatchClass should have a suffix Batch ( AccountAddressBatch, AccountAddressDynamicJob, AccountAddressJob)
+
+
+Interfaces, Test Classes & Triggers
+
+Interface name should start with I  ----------- (IAccountUpdation)
+Test class should be UpeerCamel Case ---------- (AccountManagementTest)
+Trigger should be           ------------  (AccountTriger, ApplicationTrigger )
+Suffixes are mandatory where the main sObject trigger name should be
+suffixed by ‘Trigger’ and the handler class should be suffixed by
+‘TriggerHandler                             -------- (LoanUpdateTriggerHandler)
+
+
+Methods
+
+Lower camel-case              --------- calculateAmmortization()
+                                        getAccountDetails()
+                                        isValidPartnerId()
+                                        isActive()
+                                        getPricingTable()
+Should not contain return in prefix     calculatePaymentAmount()
+                                        fetchPartnerId()
+
+
+Variables
+
+Lower Camel-Case            ---------- Integer borrowerAge
+                            ---------- String billingAddress
+                                       Boolean hasBillingAddress
+
+for creating a object of class, use suffix "Inst" -------- LoanContractConversionAPI loanConversionAPIInst = new LoanContractConversionAPI();
+for custom object                        Profile__c profileObj = new Profile__c();
+                                         Map<String,Account> appIdVsAccountMap, 
+                                         List<Account> accList
+                                         List<Account> accListToInsert
+
+Parameter name should follow the character limit of 25 as well.
+
+Visualforce Page names should be in Upper camel-case.   LoanContractView
+
+
+
+
+
+
+
