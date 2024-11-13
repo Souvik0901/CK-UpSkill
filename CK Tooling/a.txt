@@ -1,1 +1,11 @@
-apex
+PMD - Source Code Analyser, for finding programming flaws like "unused variables", "empty catch block", unneceray object creation
+PMD Rules Details - 
+    ApexAssertionsShouldIncludeMessage   1. assert(condition, msg)
+                                         2. assertEquals(expected, actual, msg)
+                                         3. asseretNotEquals(expected, actual, msg)
+
+    ApexUnitTestClassShouldHaveAsserts
+   
+    ApexUnitTestClassShouldHaveRunAs
+    
+    ApexUnitTestMethodShouldHaveIsTestAnnotaion
